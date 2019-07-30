@@ -177,3 +177,6 @@ Please feel free to offer new changes and pull things off. We are happy to discu
 ### References
 - https://github.com/keithito/tacotron (Dataset pre-processing)
 - https://github.com/r9y9/tacotron_pytorch (Initial Tacotron architecture)
+
+### After forked: 
+- Forked to add support for Chinese TTS
