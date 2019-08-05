@@ -3,8 +3,13 @@
 dir=mozilla-tacotron-tagent-bn-July-30-2019_02+50PM-726e54a
 
 test_data=(
-	"Today is a rainy day." 
-	"Welcome to the League of Legends." 
+	"Scientists at the CERN laboratory say they have discovered a new particle." 
+	"There's a way to measure the acute emotional intelligence
+	that has never gone out of style."
+	"President Trump met with other leaders at the Group of 20 conference."
+	"Generative adversarial network or variational auto-encoder."	
+	"Please call Stella."
+	"Some have accepted this as a miracle without any physical explanation."
 )
 
 rm keep/$dir/test_audios/*.wav
