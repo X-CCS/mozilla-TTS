@@ -24,7 +24,6 @@ print("Changing sample rate to", RATE, "Hz")
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
 file_list = os.listdir(INPUT_FOLDER)
-executor = ProcessPoolExecutor(max_workers=num_workers)
 
 def task(file):
     print(file)
