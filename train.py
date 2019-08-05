@@ -286,13 +286,25 @@ def evaluate(model, criterion, criterion_st, ap, current_step, epoch):
             "Be a voice, not an echo.",
             "I'm sorry Dave. I'm afraid I can't do that.",
             "This cake is great. It's so delicious and moist."
+            # "jin1 tian1 tian1 qi4 zhen1 bu2 cuo4。",
+            # "zuo2 wan3， ya4 zhou1 wen2 hua4 jia1 nian2 hua2 zai4 guo2 jia1 ti3 yu4 chang3 sheng4 da4 kai1 yan3。",
+            # "zhe4 shi4 zhong1 hua2 min2 zu2 shi3 zhong1 jian1 shou3 de5 dao4 de2 zhun3 ze2。",
+            # "you3 shen2 me5 xu1 yao4 wo3 bang1 mang2 ma5？ jin2 guan3 shuo1！",
+            # "you3 shen2 me5 xu1 yao4 wo3 bang1 mang2 ma5。",
+            # "zhong1 gong4 zhong1 yang1 zheng4 zhi4 ju2 zhao4 kai1 hui4 yi4， xi2 jin4 ping2 zhu3 chi2 hui4 yi4。 ",
+            # "wu2 lei3 shi4 jie4 bo1， xi1 ban1 ya2 ren2 you3 yi2 sai4 zhan4 ping2。"
         ]
     else:
         with open(c.test_sentences_file, "r") as f:
             test_sentences = [s.strip() for s in f.readlines()]
+    print(" > > Test_sentences:")
+    print(test_sentences)
     with torch.no_grad():
+        print("CP1")
         if data_loader is not None:
+            print("CP2")
             for num_iter, data in enumerate(data_loader):
+                print("CP3")
                 start_time = time.time()
 
                 # setup input data
