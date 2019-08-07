@@ -297,14 +297,14 @@ def evaluate(model, criterion, criterion_st, ap, current_step, epoch):
     else:
         with open(c.test_sentences_file, "r") as f:
             test_sentences = [s.strip() for s in f.readlines()]
-    print(" > > Test_sentences:")
-    print(test_sentences)
+    # print(" > > DEBUG: Test_sentences:")
+    # print(test_sentences)
     with torch.no_grad():
-        print("CP1")
+        # print("CP1")
         if data_loader is not None:
-            print("CP2")
+            # print("CP2")
             for num_iter, data in enumerate(data_loader):
-                print("CP3")
+                # print("CP3")
                 start_time = time.time()
 
                 # setup input data
